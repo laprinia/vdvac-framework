@@ -23,7 +23,7 @@ class ParticleEffect
 
 		virtual void Generate(unsigned int particleCount, bool createLocalBuffer = false);
 		virtual void FillRandomData(std::function<T(void)> generator);
-		virtual void Render(Camera *camera, Shader *shader, unsigned int nrParticles = -1);
+		virtual void Render(Camera *camera, Shader *shader, unsigned int nrParticles = 0);
 
 		virtual SSBO<T>* GetParticleBuffer() const
 		{

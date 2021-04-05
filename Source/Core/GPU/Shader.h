@@ -7,7 +7,7 @@
 #include <include/gl.h>
 
 #define MAX_2D_TEXTURES		16
-#define INVALID_LOC			-1
+#define INVALID_LOC			0
 
 class Shader
 {
