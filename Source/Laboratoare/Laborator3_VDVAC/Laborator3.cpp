@@ -16,7 +16,7 @@ Laborator3::Laborator3()
 
 Laborator3::~Laborator3()
 {
-	//distruge obiecte
+
 
 
 
@@ -70,7 +70,7 @@ bool Laborator3::load2DTexturesRAW_X(unsigned int* textures_id, unsigned char* v
 
 	bool Status = false;
 	float val;
-	// Incarca datele din volum
+
 	if (volumeData)
 	{
 		Status = true;
@@ -91,8 +91,7 @@ bool Laborator3::load2DTexturesRAW_X(unsigned int* textures_id, unsigned char* v
 			glGetFloatv(GL_MAX_TEXTURE_MAX_ANISOTROPY_EXT, &maxAnisotropy);
 			glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_MAX_ANISOTROPY_EXT, maxAnisotropy);
 
-			//cand lucram cu texturi cu dimensiuni non multiple de 4 trebuie sa facem cititorul de randuri
-			//ce incarca texturile in OpenGL sa lucreze cu memorie aliniata la 1 (default este la 4)
+			
 			glPixelStorei(GL_UNPACK_ALIGNMENT, 1);
 
 			//genereaza textura
@@ -146,8 +145,7 @@ bool Laborator3::load2DTexturesRAW_Y(unsigned int* textures_id, unsigned char* v
 			glGetFloatv(GL_MAX_TEXTURE_MAX_ANISOTROPY_EXT, &maxAnisotropy);
 			glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_MAX_ANISOTROPY_EXT, maxAnisotropy);
 
-			//cand lucram cu texturi cu dimensiuni non multiple de 4 trebuie sa facem cititorul de randuri
-			//ce incarca texturile in OpenGL sa lucreze cu memorie aliniata la 1 (default este la 4)
+	
 			glPixelStorei(GL_UNPACK_ALIGNMENT, 1);
 
 			//genereaza textura xoz
@@ -171,7 +169,7 @@ bool Laborator3::load2DTexturesRAW_Y(unsigned int* textures_id, unsigned char* v
 }
 
 
-//returneaza id-urile texturilor 2D
+
 bool Laborator3::load2DTexturesRAW_Z(unsigned int* textures_id, unsigned char* volumeData, unsigned int xsize, unsigned int ysize, unsigned int zsize) {
 
 	float* currentSlice;
@@ -202,8 +200,6 @@ bool Laborator3::load2DTexturesRAW_Z(unsigned int* textures_id, unsigned char* v
 			glGetFloatv(GL_MAX_TEXTURE_MAX_ANISOTROPY_EXT, &maxAnisotropy);
 			glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_MAX_ANISOTROPY_EXT, maxAnisotropy);
 
-			//cand lucram cu texturi cu dimensiuni non multiple de 4 trebuie sa facem cititorul de randuri
-			//ce incarca texturile in OpenGL sa lucreze cu memorie aliniata la 1 (default este la 4)
 			glPixelStorei(GL_UNPACK_ALIGNMENT, 1);
 
 			//genereaza textura xo
