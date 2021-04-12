@@ -1,5 +1,6 @@
 #pragma once
 
-#include <Laboratoare/Laborator2_VDVAC/Laborator2.h>
+
+#include <Laboratoare/Laborator3_VDVAC/Laborator3.h>
 
 

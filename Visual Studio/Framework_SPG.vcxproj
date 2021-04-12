@@ -34,7 +34,7 @@
     <ClCompile Include="..\Source\Core\Window\WindowObject.cpp" />
     <ClCompile Include="..\Source\Core\World.cpp" />
     <ClCompile Include="..\Source\include\gl.cpp" />
-    <ClCompile Include="..\Source\Laboratoare\Laborator2_VDVAC\Laborator2.cpp" />
+    <ClCompile Include="..\Source\Laboratoare\Laborator3_VDVAC\Laborator3.cpp" />
     <ClCompile Include="..\Source\Main.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -60,13 +60,11 @@
     <ClInclude Include="..\Source\include\math.h" />
     <ClInclude Include="..\Source\include\utils.h" />
     <ClInclude Include="..\Source\Laboratoare\LabList.h" />
-    <ClInclude Include="..\Source\Laboratoare\Laborator2_VDVAC\Laborator2.h" />
+    <ClInclude Include="..\Source\Laboratoare\Laborator3_VDVAC\Laborator3.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\Source\Laboratoare\Laborator2_VDVAC\Shaders\FragmentShader_backface.glsl" />
-    <None Include="..\Source\Laboratoare\Laborator2_VDVAC\Shaders\FragmentShader_raycasting.glsl" />
-    <None Include="..\Source\Laboratoare\Laborator2_VDVAC\Shaders\VertexShader_backface.glsl" />
-    <None Include="..\Source\Laboratoare\Laborator2_VDVAC\Shaders\VertexShader_raycasting.glsl" />
+    <None Include="..\Source\Laboratoare\Laborator3_VDVAC\Shaders\FragmentShader.glsl" />
+    <None Include="..\Source\Laboratoare\Laborator3_VDVAC\Shaders\VertexShader.glsl" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{FB43B467-42CC-458C-9556-597B025830F7}</ProjectGuid>
