@@ -22,11 +22,11 @@
     <Filter Include="Core\Managers">
       <UniqueIdentifier>{2940a1fd-9fef-46a7-93fb-a8241118d00a}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Laboratoare\Laborator3_VDVAC">
-      <UniqueIdentifier>{bbca7610-675f-4e66-ad8d-ffa6fa3f7fd2}</UniqueIdentifier>
+    <Filter Include="Laboratoare\Laborator4_VDVAC">
+      <UniqueIdentifier>{19d3e1f4-f9ef-4d8e-9618-53a1e2bf44c7}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Laboratoare\Laborator3_VDVAC\Shaders">
-      <UniqueIdentifier>{ebb85413-e2c9-412c-9120-9e17e8200469}</UniqueIdentifier>
+    <Filter Include="Laboratoare\Laborator4_VDVAC\Shaders">
+      <UniqueIdentifier>{5eeef07c-3002-4411-8cf1-1accbfd01e9c}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -76,8 +76,8 @@
     <ClCompile Include="..\Source\Core\GPU\FrameBuffer.cpp">
       <Filter>Core\GPU</Filter>
     </ClCompile>
-    <ClCompile Include="..\Source\Laboratoare\Laborator3_VDVAC\Laborator3.cpp">
-      <Filter>Laboratoare\Laborator3_VDVAC</Filter>
+    <ClCompile Include="..\Source\Laboratoare\Laborator4_VDVAC\Laborator4.cpp">
+      <Filter>Laboratoare\Laborator4_VDVAC</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -147,16 +147,19 @@
     <ClInclude Include="..\Source\Core\GPU\ParticleEffect.h">
       <Filter>Core\GPU</Filter>
     </ClInclude>
-    <ClInclude Include="..\Source\Laboratoare\Laborator3_VDVAC\Laborator3.h">
-      <Filter>Laboratoare\Laborator3_VDVAC</Filter>
+    <ClInclude Include="..\Source\Laboratoare\Laborator4_VDVAC\Laborator4.h">
+      <Filter>Laboratoare\Laborator4_VDVAC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Laboratoare\Laborator4_VDVAC\FFD.h">
+      <Filter>Laboratoare\Laborator4_VDVAC</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\Source\Laboratoare\Laborator3_VDVAC\Shaders\FragmentShader.glsl">
-      <Filter>Laboratoare\Laborator3_VDVAC\Shaders</Filter>
+    <None Include="..\Source\Laboratoare\Laborator4_VDVAC\Shaders\FragmentShader.glsl">
+      <Filter>Laboratoare\Laborator4_VDVAC\Shaders</Filter>
     </None>
-    <None Include="..\Source\Laboratoare\Laborator3_VDVAC\Shaders\VertexShader.glsl">
-      <Filter>Laboratoare\Laborator3_VDVAC\Shaders</Filter>
+    <None Include="..\Source\Laboratoare\Laborator4_VDVAC\Shaders\VertexShader.glsl">
+      <Filter>Laboratoare\Laborator4_VDVAC\Shaders</Filter>
     </None>
   </ItemGroup>
 </Project>

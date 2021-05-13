@@ -34,7 +34,7 @@
     <ClCompile Include="..\Source\Core\Window\WindowObject.cpp" />
     <ClCompile Include="..\Source\Core\World.cpp" />
     <ClCompile Include="..\Source\include\gl.cpp" />
-    <ClCompile Include="..\Source\Laboratoare\Laborator3_VDVAC\Laborator3.cpp" />
+    <ClCompile Include="..\Source\Laboratoare\Laborator4_VDVAC\Laborator4.cpp" />
     <ClCompile Include="..\Source\Main.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -60,17 +60,18 @@
     <ClInclude Include="..\Source\include\math.h" />
     <ClInclude Include="..\Source\include\utils.h" />
     <ClInclude Include="..\Source\Laboratoare\LabList.h" />
-    <ClInclude Include="..\Source\Laboratoare\Laborator3_VDVAC\Laborator3.h" />
+    <ClInclude Include="..\Source\Laboratoare\Laborator4_VDVAC\FFD.h" />
+    <ClInclude Include="..\Source\Laboratoare\Laborator4_VDVAC\Laborator4.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\Source\Laboratoare\Laborator3_VDVAC\Shaders\FragmentShader.glsl" />
-    <None Include="..\Source\Laboratoare\Laborator3_VDVAC\Shaders\VertexShader.glsl" />
+    <None Include="..\Source\Laboratoare\Laborator4_VDVAC\Shaders\FragmentShader.glsl" />
+    <None Include="..\Source\Laboratoare\Laborator4_VDVAC\Shaders\VertexShader.glsl" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{FB43B467-42CC-458C-9556-597B025830F7}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>Framework_EGC</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
