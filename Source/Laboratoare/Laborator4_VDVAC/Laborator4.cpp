@@ -7,17 +7,13 @@
 using namespace std;
 #define MAX_DIM 10000
 
-// Order of function calling can be seen in "Source/Core/World.cpp::LoopUpdate()"
-// https://github.com/UPB-Graphics/SPG-Framework/blob/master/Source/Core/World.cpp
-
 Laborator4::Laborator4()
 {
 }
 
 Laborator4::~Laborator4()
 {
-	//distruge obiecte
-	
+
 
 }
 

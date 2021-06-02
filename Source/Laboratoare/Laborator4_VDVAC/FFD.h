@@ -21,7 +21,6 @@ namespace FFD
 		return 0;
 	}
 
-	//calculeaza coeficientii Bernstein pentru toate punctele obiectului
 	void CreateBernsteinCoefficients(std::vector<float>& coefficients, std::vector<glm::vec3> vertices)
 	{
 
@@ -46,8 +45,7 @@ namespace FFD
 	}
 
 
-	//seteaza pozitiile default ale punctelor de control in cubul de latura 1
-	//la distanta de 1/3 unul fata de celalalt: 0, 1/3, 2/3, 1
+
 	void InitControlPoints(std::vector<glm::vec3>& control_points)
 	{
 		int i, j, k, offset;
@@ -59,7 +57,7 @@ namespace FFD
 				for (i = 0; i <= 3; i++)
 				{
 
-					control_points[offset] = glm::vec3(k / 3, j / 3, i / 3); //TODO1 calculeaza corect
+					control_points[offset] = glm::vec3(k / 3, j / 3, i / 3); 
 
 					offset++;
 				}
@@ -68,7 +66,6 @@ namespace FFD
 
 	}
 
-	//calculeaza pozitiile varfurilor obiectului 3D conform coeficientilor Bernstein
 	void ComputeVerticesPosition(std::vector<glm::vec3> control_points, std::vector<float> coefficients, std::vector<glm::vec3>& vertices)
 	{
 
@@ -86,7 +83,7 @@ namespace FFD
 					for (int i = 0; i <= 3; i++)
 					{
 
-						//TODO3 calculeaza corect
+						
 						vertices[vertex] += control_points[offset] * coefficients[vertex * 64 + offset];
 						offset++;
 					}
@@ -96,8 +93,6 @@ namespace FFD
 
 	}
 
-	//se alege o functie de modificare random a punctelor de control
-	//aici se poate inlocui cu orice alta functie care are sens (astfel incat fetele obiectului sa nu se intersecteze)
 	void ComputeNewControlPointsPositions(std::vector<glm::vec3>& control_points)
 	{
 		int i, j, k, offset;
